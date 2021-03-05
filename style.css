@@ -1,0 +1,8 @@
+.page-progress-bar-container{
+  z-index: 9999;
+}
+
+.page-progress-bar-container .page-progress-bar {
+  height: 4px;
+  width: 0%;
+}
