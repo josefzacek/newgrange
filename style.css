@@ -10,3 +10,8 @@
 a.navbar-brand img {
   max-width: 70px;
 }
+
+.navbar-nav .nav-item .bar {
+  height: 2px;
+  width: 0%;
+}
