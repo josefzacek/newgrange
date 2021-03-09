@@ -6,3 +6,7 @@
   height: 4px;
   width: 0%;
 }
+
+a.navbar-brand img {
+  max-width: 70px;
+}
