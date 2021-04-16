@@ -1,8 +1,17 @@
-.page-progress-bar-container{
+.page-progress-bar-container {
   z-index: 9999;
 }
 
 .page-progress-bar-container .page-progress-bar {
   height: 4px;
+  width: 0%;
+}
+
+a.navbar-brand img {
+  max-width: 70px;
+}
+
+.navbar-nav .nav-item .bar {
+  height: 2px;
   width: 0%;
 }
