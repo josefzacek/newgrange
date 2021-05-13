@@ -9,3 +9,6 @@ function pageScroll() {
 window.onscroll = function(){
   pageScroll()
 };
+
+// get height of fixed navigation container
+var navigationContainerHeight = $("#navigation-container").height()
