@@ -12,3 +12,8 @@ window.onscroll = function(){
 
 // get height of fixed navigation container
 var navigationContainerHeight = $("#navigation-container").height()
+
+// add height of navigation conntainer + progress bar to each section
+$('*[id*=section-] .col').each(function() {
+  $(this).css ("margin-top",navigationContainerHeight + 4)
+});
