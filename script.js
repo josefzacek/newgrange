@@ -17,3 +17,11 @@ var navigationContainerHeight = $("#navigation-container").height()
 $('*[id*=section-] .col').each(function() {
   $(this).css ("margin-top",navigationContainerHeight + 4)
 });
+
+var sectionOne = $("#section-1").height();
+var sectionTwo = $("#section-2").height();
+var sectionThree = $("#section-3").height();
+var sectionFour = $("#section-4").height();
+var sectionFive = $("#section-5").height();
+var sectionSix = $("#section-6").height();
+var scrollToTop = $(window).scrollTop()
