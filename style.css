@@ -15,3 +15,23 @@ a.navbar-brand img {
   height: 2px;
   width: 0%;
 }
+
+/* banner css */
+.banner {
+  background-image: url(images/newgrange-banner.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner h1 {
+  text-shadow: 0px 4px 6px #000;
+  text-wrap: balance;
+  font-size: 45px;
+}
+
+@media (min-width: 993px) {
+  .banner h1 {
+    font-size: 72px;
+  }
+}
