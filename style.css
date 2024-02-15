@@ -6,6 +6,11 @@ html {
   max-width: 1140px;
 }
 
+.text-green {
+  color: #198754;
+}
+
+/* progress bar css */
 .page-progress-bar-container {
   z-index: 9999;
 }
