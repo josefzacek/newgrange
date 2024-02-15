@@ -1,7 +1,16 @@
+html {
+  scroll-padding-top: 60px
+}
+
 .container {
   max-width: 1140px;
 }
 
+.text-green {
+  color: #198754;
+}
+
+/* progress bar css */
 .page-progress-bar-container {
   z-index: 9999;
 }
@@ -11,6 +20,7 @@
   width: 0%;
 }
 
+/* navbar css */
 .navbar-nav .nav-item .bar {
   height: 2px;
   width: 0%;
@@ -33,5 +43,23 @@
 @media (min-width: 993px) {
   .banner h1 {
     font-size: 72px;
+  }
+}
+
+/* direction section css */
+#directions .list-padding-left {
+  padding-left: 1.1em;
+}
+
+@media (min-width: 992px) {
+  #directions .middle-column:before {
+    content: "";
+    position: absolute;
+    width: 160%;
+    height: 80%;
+    background: #e9ecef;
+    left: -30%;
+    top: -2%;
+    z-index: -1;
   }
 }
