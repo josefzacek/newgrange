@@ -10,6 +10,11 @@ html {
   color: #198754;
 }
 
+.large-text-with-stroke {
+  font-size: calc(50px + 5.5vw);
+  text-shadow: 0px 0px 4px #000000;
+}
+
 /* progress bar css */
 .page-progress-bar-container {
   z-index: 9999;
