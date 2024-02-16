@@ -11,8 +11,14 @@ html {
 }
 
 .large-text-with-stroke {
-  font-size: calc(50px + 5.5vw);
+  font-size: calc(50px + 0.5vw);
   text-shadow: 0px 0px 4px #000000;
+}
+
+@media(min-width: 576px){
+  .large-text-with-stroke {
+    font-size: calc(50px + 4.5vw);
+  }
 }
 
 /* progress bar css */
@@ -48,6 +54,15 @@ html {
 @media (min-width: 993px) {
   .banner h1 {
     font-size: 72px;
+  }
+}
+
+/* about sectin css */
+@media (min-width: 993px) {
+  #about img {
+    position: absolute;
+    max-width: 50vw;
+    right: 20px;
   }
 }
 
