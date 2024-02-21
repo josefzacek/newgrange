@@ -21,6 +21,17 @@ html {
   }
 }
 
+.btn-primary {
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    border-color: #198754;
+    color: #198754;
+}
+
 /* progress bar css */
 .page-progress-bar-container {
   z-index: 9999;
