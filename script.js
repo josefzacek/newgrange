@@ -19,3 +19,14 @@ navLinks.forEach(function(link) {
     document.getElementById(sectionName).scrollIntoView(true);
   });
 });
+
+// close mobile navigation on link click
+var mainNavigation = document.getElementById("navbarNav");
+var mainNavigationLinks = document.querySelectorAll("a.nav-link");
+var mainNavigationToggler = document.querySelector(".navbar-toggler");
+mainNavigationLinks.forEach(function(e){
+  e.addEventListener('click', function (event) {
+    mainNavigationToggler.classList.add("collapsed");
+    mainNavigation.classList.remove("show");
+  })    
+});
