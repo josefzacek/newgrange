@@ -30,3 +30,13 @@ mainNavigationLinks.forEach(function(e){
     mainNavigation.classList.remove("show");
   })    
 });
+
+// animate banner text using GSAP
+window.onload = function() {
+  gsap.to(".banner h1",
+    {opacity: 1, duration: 3},
+  );
+  gsap.to(".banner h1",
+    {x: 0, duration: 1}
+  );
+}
