@@ -63,3 +63,27 @@ scaleLargeText("#about h1.large-text-with-stroke");
 scaleLargeText("#winter-solstice h1.large-text-with-stroke");
 scaleLargeText("#directions h1.large-text-with-stroke");
 scaleLargeText("#resources h1.large-text-with-stroke");
+
+// animate headings and subheadings to fade in and go up
+function animateHeadings(selector, trigger){
+  gsap.set(selector, {y: "100px", opacity: 0.8});
+  gsap.to(selector, {
+    y: 0,
+    opacity: 1,
+    duration: 1,
+    scrollTrigger: {
+      trigger: selector,
+      start: "top 80%",
+    }
+  });
+} 
+
+animateHeadings("#about .row:nth-child(1)");
+animateHeadings("#about .row:nth-child(2)");
+animateHeadings("#winter-solstice > .row:nth-child(1) .container > .row:nth-child(1)");
+animateHeadings("#visitor-centre .row:nth-child(1)");
+animateHeadings("#visitor-centre .row:nth-child(2)");
+animateHeadings("#directions .row:nth-child(1)");
+animateHeadings("#directions .row:nth-child(2)");
+animateHeadings("#resources .row:nth-child(1)");
+animateHeadings("#resources .row:nth-child(2)");
