@@ -87,3 +87,22 @@ animateHeadings("#directions .row:nth-child(1)");
 animateHeadings("#directions .row:nth-child(2)");
 animateHeadings("#resources .row:nth-child(1)");
 animateHeadings("#resources .row:nth-child(2)");
+
+// animate visitor centre items
+function animateHeadings(selector, trigger){
+  gsap.set(selector, {y: "50px"});
+  gsap.to(selector, {
+    y: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: selector,
+      start: "top 80%",
+    }
+  });
+} 
+
+animateHeadings("#visitor-centre .row:nth-child(4) .col-12:nth-child(1)");
+animateHeadings("#visitor-centre .row:nth-child(4) .col-12:nth-child(2)");
+animateHeadings("#visitor-centre .row:nth-child(4) .col-12:nth-child(3)");
+animateHeadings("#visitor-centre .row:nth-child(4) .col-12:nth-child(4)");
+animateHeadings("#visitor-centre .row:nth-child(4) .col-12:nth-child(5)");
