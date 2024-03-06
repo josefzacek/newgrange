@@ -89,7 +89,7 @@ animateHeadings("#resources .row:nth-child(1)");
 animateHeadings("#resources .row:nth-child(2)");
 
 // animate visitor centre items
-function animateHeadings(selector, trigger){
+function animateVisitorCentreItems(selector, trigger){
   gsap.set(selector, {y: "50px"});
   gsap.to(selector, {
     y: 0,
@@ -101,8 +101,26 @@ function animateHeadings(selector, trigger){
   });
 } 
 
-animateHeadings("#visitor-centre .row:nth-child(4) .col-12:nth-child(1)");
-animateHeadings("#visitor-centre .row:nth-child(4) .col-12:nth-child(2)");
-animateHeadings("#visitor-centre .row:nth-child(4) .col-12:nth-child(3)");
-animateHeadings("#visitor-centre .row:nth-child(4) .col-12:nth-child(4)");
-animateHeadings("#visitor-centre .row:nth-child(4) .col-12:nth-child(5)");
+animateVisitorCentreItems("#visitor-centre .row:nth-child(4) .col-12:nth-child(1)");
+animateVisitorCentreItems("#visitor-centre .row:nth-child(4) .col-12:nth-child(2)");
+animateVisitorCentreItems("#visitor-centre .row:nth-child(4) .col-12:nth-child(3)");
+animateVisitorCentreItems("#visitor-centre .row:nth-child(4) .col-12:nth-child(4)");
+animateVisitorCentreItems("#visitor-centre .row:nth-child(4) .col-12:nth-child(5)");
+
+// animate resources items
+function animateResourcesItems(selector, trigger){
+    gsap.set(selector, {y: "50px", opacity: 0.2});
+    gsap.to(selector, {
+      y: 0,
+      duration: 1,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: selector,
+        start: "top 80%",
+      }
+    });
+} 
+
+animateResourcesItems("#resources .row:nth-child(3) .col-12:nth-child(1)");
+animateResourcesItems("#resources .row:nth-child(3) .col-12:nth-child(2)");
+animateResourcesItems("#resources .row:nth-child(3) .col-12:nth-child(3)");
