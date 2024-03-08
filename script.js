@@ -142,3 +142,21 @@ function animateFromLeft(element){
 animateFromLeft("#about .row:nth-child(4) .col-12:nth-child(1)");
 animateFromLeft("#winter-solstice .row:nth-child(3) .container .row .col-12:nth-child(1)");
 animateFromLeft("#directions > .row:nth-child(4) > .col-12:nth-child(1)");
+
+// animate element from tight
+function animateFromRight(element){
+  gsap.set(element, {x: "200px", opacity: 0});
+  gsap.to(element, {
+    x: 0,
+    opacity: 1,
+    duration: 1,
+    scrollTrigger: {
+      trigger: element,
+      start: "top 80%",
+    }
+  });
+}
+
+animateFromRight("#about .row:nth-child(4) .col-12:nth-child(2)");
+animateFromRight("#winter-solstice .row:nth-child(3) .container .row .col-12:nth-child(2)");
+animateFromRight("#directions > .row:nth-child(4) > .col-12:nth-child(3)");
